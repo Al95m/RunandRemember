@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09E3FF"
+    tools:context=".MainActivity3RegisterTraining">
+
+    <ImageView
+        android:id="@+id/btn_atrasreg"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="2dp"
+        android:background="#09E3FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_activity3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autoText="true"
+                android:gravity="center_horizontal"
+                android:text="Registra tu entrenamiento"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#B030C6"
+                android:textSize="34sp"
+                tools:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/nick_image_depor"
+                android:layout_width="match_parent"
+                android:layout_height="234dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/fotodepor" />
+
+            <TextView
+                android:id="@+id/et_text_image"
+                android:layout_width="158dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="10dp"
+                android:text="Saca una foto" />
+
+            <Spinner
+                android:id="@+id/nick_sport"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/nick_desc"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:ems="10"
+                android:hint="Dime una breve descripción:"
+                android:inputType="textPersonName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nick_hours"
+                android:layout_width="240dp"
+                android:layout_height="49dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="Horas a realizar:"
+                android:inputType="number" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/nick_day"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Elige un día:"
+                android:inputType="date" />
+
+            <TextView
+                android:id="@+id/texthora"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Opcional: Añadir plan y horario en el entrenamiento." />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="204dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:text="Registrar entrenamiento" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

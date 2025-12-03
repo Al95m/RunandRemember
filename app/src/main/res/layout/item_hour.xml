@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44D7C"
+    tools:context=".recyclerview.ItemHour">
+
+    <ImageButton
+        android:id="@+id/btn_aa_hour"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/anadir_alarma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/textalarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/anadir_alarma"
+        app:layout_constraintEnd_toEndOf="@id/btn_aa_hour"
+        app:layout_constraintStart_toStartOf="@id/btn_aa_hour"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aa_hour" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="#F44D7C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textalarm">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/list_hour_vaci"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/no_hay_horarios"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_hour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/item_hour_adapter" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

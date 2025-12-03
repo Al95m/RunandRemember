@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardselect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/nick_image_depor3"
+                android:layout_width="100dp"
+                android:layout_height="150dp"
+                android:background="@drawable/deportitementrena"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/nick_sport3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/nick_image_depor3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F85B2A"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/nick_hours3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nick_sport3"
+                android:layout_alignStart="@+id/nick_sport3"
+                android:layout_marginTop="8dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                tools:text="8 hours" />
+
+            <TextView
+                android:id="@+id/nick_desc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nick_hours3"
+                android:layout_alignStart="@+id/nick_sport3"
+                android:layout_marginTop="8dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                tools:text="Description of the workout" />
+
+            <TextView
+                android:id="@+id/nick_day3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nick_desc3"
+                android:layout_alignStart="@+id/nick_sport3"
+                android:layout_marginTop="8dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="16sp"
+                tools:text="Monday" />
+
+            <View
+                android:id="@+id/linea"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_above="@+id/btn_del_entre"
+                android:layout_alignStart="@+id/nick_sport3"
+                android:layout_alignParentEnd="true"
+                android:background="#ffd5d5d5" />
+
+            <ImageView
+                android:id="@+id/btn_del_entre"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/purple_700"
+                android:contentDescription="@string/app_name"
+                android:src="@android:drawable/ic_delete" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#09E3FF"
+    tools:context=".recyclerview.ItemTraining">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="562dp"
+        android:layout_marginTop="100dp"
+        android:background="#09E3FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/list_entrena_vaci"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:text="No has apuntado ningun entrenamiento.                                    Añade uno."
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_entre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_regis_entrena"
+        android:layout_width="175dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="100dp"
+        android:text="Registrar entrenamiento"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_update_usua"
+        android:layout_width="56dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_manage" />
+
+    <ImageView
+        android:id="@+id/btn_salir"
+        android:layout_width="56dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/btnnsalir" />
+
+    <TextView
+        android:id="@+id/textUsua"
+        android:layout_width="111dp"
+        android:layout_height="24dp"
+        android:text="Consulta usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update_usua" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

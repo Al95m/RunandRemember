@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">RunRemember</string>
+    <string name="no_hay_planes">No has apuntado ningún planning. Añade uno.</string>
+    <string name="anadir_plan">Añadir plan</string>
+    <string name="no_hay_horarios">No has anotado ningún horario. Añade uno.</string>
+    <string name="anadir_alarma">Añadir alarma</string>
+    <string name="imagen_de_la_hora">Imagen de la hora</string>
+    <string name="editar_hora">Editar hora</string>
+    <string name="eliminar_hora">Eliminar hora</string>
+    <string name="volver_atras">Volver atrás</string>
+    <string name="registro">Registro</string>
+    <string name="imagen_de_registro">Imagen de registro</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="correo_electronico">Correo electrónico válido</string>
+    <string name="altura_cm">Altura (cm)</string>
+    <string name="altura_optativo">Altura (Optativo)</string>
+    <string name="peso_kg">Peso (kg)</string>
+    <string name="peso_optativo">Peso (Optativo)</string>
+    <string name="edad">Edad</string>
+    <string name="edad_hint">0-99</string>
+    <string name="registrar_usuario">Registrar Usuario</string>
+    <string name="actualizar_horario">Actualizar nuevo horario</string>
+    <string name="actualiza_tu_horario">Actualiza tu horario</string>
+    <string name="guardar_actualizacion">Guardar actualización</string>
+    <string name="actualiza_tu_planning">Actualiza tu planning</string>
+    <string name="quieres_salir_de_la_cuenta">¿Quieres salir de la cuenta?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+    <string name="quieres_eliminar_el_entrenamiento">¿Quieres eliminar el entrenamiento seleccionado?</string>
+    <string name="se_borrara_permanentemente">Se borrará permanentemente.</string>
+    <string name="se_elimino">Se eliminó.</string>
+    <string name="no_se_pudo_eliminar">No se pudo eliminar.</string>
+    <string-array name="valores_deportes">
+        <item>Correr</item>
+        <item>Natación</item>
+        <item>Bici montaña</item>
+        <item>Bici carretera</item>
+        <item>Gimnasio</item>
+        <item>Fútbol</item>
+        <item>Baloncesto</item>
+        <item>Balonmano</item>
+        <item>Tennis</item>
+        <item>Gimnasia ritmica</item>
+        <item>Beísbol</item>
+        <item>Boxeo</item>
+        <item>Piragüismo</item>
+        <item>Atletismo</item>
+        <item>Cinta</item>
+        <item>Bicicleta estática</item>
+        <item>Remo</item>
+        <item>Badminton</item>
+        <item>Estiramientos</item>
+        <item>Quidditch</item>
+        <item>Equitación</item>
+        <item>Fútbol sala</item>
+        <item>Competición de motor</item>
+        <item>Esgrima</item>
+        <item>Waterpolo</item>
+        <item>Rugby</item>
+        <item>Tennis de mesa</item>
+        <item>Golf</item>
+        <item>Volleyball</item>
+        <item>Triatlón</item>
+        <item>Otros</item>
+    </string-array>
+</resources>

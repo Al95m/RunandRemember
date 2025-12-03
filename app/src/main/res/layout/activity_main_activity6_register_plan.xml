@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    tools:context=".MainActivity6RegisterPlan">
+
+    <ScrollView
+        android:id="@+id/scrollViewplan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:background="#4CAF50"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/text_activity6"
+                    android:layout_width="match_parent"
+                    android:layout_height="74dp"
+                    android:gravity="center_horizontal"
+                    android:text="Registra un nuevo planning"
+                    android:textColor="#131313"
+                    android:textSize="24dp"
+                    android:textStyle="italic"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/btn_atras_registro_plan"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_nickplan"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="145dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="Escribe aquí la descripción"
+        android:inputType="textImeMultiLine"
+        android:gravity="start|top"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/nick_plan"
+            android:layout_width="match_parent"
+            android:layout_height="122dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="125dp"
+            android:inputType="textImeMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_plan_new"
+        android:layout_width="180dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="350dp"
+        android:text="Guardar nuevo plan entrenamiento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

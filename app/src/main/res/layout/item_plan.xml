@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    tools:context=".recyclerview.ItemPlan">
+
+    <ScrollView
+        android:id="@+id/scrollViewplanitem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#4CAF50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textplan">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/list_plan_vaci"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:gravity="start"
+                android:text="@string/no_hay_planes"
+                android:visibility="visible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_plan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/btn_aa_plan"
+        android:layout_width="70dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="26dp"
+        android:contentDescription="@string/anadir_plan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/textplan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="@string/anadir_plan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aa_plan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--- Permiso de camara -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--- Permiso de vibracion para la alarma -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/alarmdepor"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/fotodepor"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RunRemember">
+        <activity
+            android:name=".recyclerview.ItemPlan"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity6RegisterPlan"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.ItemHour"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity5RegisterHour"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity4ScreenTraining"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity3RegisterTraining"
+            android:exported="false" />
+        <activity
+            android:name=".recyclerview.ItemTraining"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2Register"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".alarmclock.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>
