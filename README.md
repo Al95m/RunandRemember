@@ -30,7 +30,9 @@ Aplicación Android desarrollada en Kotlin para registrar entrenamientos y estab
 Proyecto en desarrollo con funcionalidades principales implementadas. Proyecto educativo.
 
 ## 🎯 Objetivo
-Este proyecto forma parte de mi aprendizaje en desarrollo Android dentro del grado superior DAM.
+Este proyecto fue desarrollado durante mi formación en el grado superior de Desarrollo de Aplicaciones Multiplataforma (DAM).
+
+Actualmente estoy finalizando el grado superior de Administración de Sistemas Informáticos en Red (ASIR), ampliando mis conocimientos en sistemas, redes y administración.
 
 ## 📸 Capturas 
 
