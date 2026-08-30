@@ -113,10 +113,10 @@ administración.
 ## 📸 Capturas
 
 <img width="300" height="700" alt="Screenshot_20260826_190719" src="https://github.com/user-attachments/assets/018a4045-8f6c-4d22-be04-c89810ed52b4" />
-<img width="1080" height="2400" alt="Screenshot_20260826_190540" src="https://github.com/user-attachments/assets/07f1f702-5220-4e9c-8aca-65a8b440f286" />
-<img width="1080" height="2400" alt="Screenshot_20260826_190906" src="https://github.com/user-attachments/assets/092bf01b-f250-496d-b9b3-381715457ac7" />
-<img width="1080" height="2400" alt="Screenshot_20260826_190826" src="https://github.com/user-attachments/assets/b6f2e4d2-a0b8-4c37-8e47-6d3f96bb6c82" />
-<img width="1080" height="2400" alt="Screenshot_20260826_190747" src="https://github.com/user-attachments/assets/e6fab78a-92db-4184-a91d-af42d2821ac3" />
+<img width="300" height="700" alt="Screenshot_20260826_190540" src="https://github.com/user-attachments/assets/07f1f702-5220-4e9c-8aca-65a8b440f286" />
+<img width="300" height="700" alt="Screenshot_20260826_190906" src="https://github.com/user-attachments/assets/092bf01b-f250-496d-b9b3-381715457ac7" />
+<img width="300" height="700" alt="Screenshot_20260826_190826" src="https://github.com/user-attachments/assets/b6f2e4d2-a0b8-4c37-8e47-6d3f96bb6c82" />
+<img width="300" height="700" alt="Screenshot_20260826_190747" src="https://github.com/user-attachments/assets/e6fab78a-92db-4184-a91d-af42d2821ac3" />
 
 ## 👨‍💻 Autor
 
