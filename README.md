@@ -27,11 +27,47 @@ establecer recordatorios mediante alarmas.
 
 ## 📁 Estructura del proyecto
 
-- `activities/` → Pantallas principales
-- `database/` → Gestión de SQLite
-- `models/` → Clases de datos (Parcelable)
-- `adapters/` → RecyclerView
-- `receivers/` → Alarmas y notificaciones
+```text
+app/src/main/java/com/example/runandremember/
+│
+├── alarmclock/
+│   ├── AlarmReceiver.kt
+│   └── BootReceiver.kt
+│
+├── openhelper/
+│   └── SQLite_OpenHelper.kt
+│
+├── recyclerview/
+│   ├── ItemHour.kt
+│   ├── ItemHourAdapter.kt
+│   ├── ItemPlan.kt
+│   ├── ItemPlanAdapter.kt
+│   ├── ItemTraining.kt
+│   └── ItemTrainingAdapter.kt
+│
+├── ui/
+│   └── theme/
+│
+├── Hour.kt
+├── MainActivity.kt
+├── MainActivity2Register.kt
+├── MainActivity3RegisterTraining.kt
+├── MainActivity4ScreenTraining.kt
+├── MainActivity5RegisterHour.kt
+├── MainActivity6RegisterPlan.kt
+├── Planning.kt
+├── Sport.kt
+└── Usuario.kt
+```
+
+### Organización
+
+* **`alarmclock/`** → Gestión de alarmas y reprogramación después del reinicio del dispositivo.
+* **`openhelper/`** → Gestión de la base de datos SQLite y operaciones de persistencia.
+* **`recyclerview/`** → Activities y adapters encargados de mostrar y gestionar entrenamientos, horarios y planes mediante RecyclerView.
+* **`ui/theme/`** → Elementos relacionados con el tema y la interfaz de usuario.
+* **Clases principales** → Activities y modelos de datos utilizados por la aplicación.
+
 
 ## 🚀 Estado del proyecto
 
